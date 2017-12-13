@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dominos.css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="dominoscontroller.js"></script>
+	<title>Dominos Sign In Page</title>
+</head>
+<body class = "main">
+	<div class="container header_main" >
+
+	  <h2>Welcome to Dominos</h2>
+	  <p class = "red" data-toggle="modal" data-target="#myModal_1">Sign In, click here!</p>
+	  <div class="modal fade" id="myModal_1" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <img id="profile-img" class="profile-img-card" src="dominos.jpg" width ="90px" height = "90px"  />
+			</div>
+			<div class="modal-body">
+			  <form name = "form_1"class="form-signin" onsubmit="return checkForm(this);"> 
+					 <span id="reauth-email" class="reauth-email"></span> 
+					 <input type="text" class="form-control" name="username" placeholder="Email address">
+					 <input type="password" class="form-control" name="pwd1" placeholder="Password" >
+						<div id="remember" class="checkbox">
+							<label>
+								<input type="checkbox" value="remember-me"> Remember me
+							</label>
+						</div>
+						<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" >Sign in</button>
+				</form>
+				<a href="#" class="forgot-password">
+                Forgot the password?
+				</a>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div>
+	  <p class =" blue" data-toggle="modal" data-target="#myModal_2">Create New Account, click here!</p>
+	  <div class="modal fade" id="myModal_2" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <img id="profile-img" class="profile-img-card" src="dominos.jpg" width ="90px" height = "90px"  />
+			</div>
+			<div class="modal-body">
+			  <form name = "form_2" class="form-signin" onsubmit="return createForm(this);">
+				<span id="reauth-email" class="reauth-email"></span>
+				 <input type="text" class="form-control" name="username1" placeholder="Email address" >
+				 <input type="password" class="form-control" name="pwd1" placeholder="Password" >
+				 <input type="password" class="form-control" name="pwd2" placeholder="Confirm Password" >
+				<button class="btn btn-lg btn-primary btn-block btn-signin">Create Your Account</button>
+			 </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  </div>
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide"><img src="one.jpg"/></li>
+                    <li class="slide"><img src="2.jpg"/></li>
+                    <li class="slide slide3"><img src="3.jpg"/></li>
+                    <li class="slide slide4"><img src="4.jpg"/></li>
+                    <li class="slide slide5"><img src="5.jpg"/></li>
+                    <li class="slide slide1"><img src="one.jpg"/></li>
+                </ul>
+            </div>
+	</div>
+	
+	
+</body>
+</html>

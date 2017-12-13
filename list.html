@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dominos.css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="dominoscontroller.js"></script>
+	<title>Dominos CheckOut Option</title>
+</head>
+<body class = "main">
+	<div class="container">
+		<h2 class="panel panel-default order_online">Online Order</h2>
+		<div class = "list_main">
+			<button  type="submit" onclick = "hideDelivery('addressForm')" id ="button1" class="element" >Delivery</button>
+				<form   id = "addressForm" class ="form_class" onsubmit="return address_validation(this);" style="display:none;">
+					  <div class="form-group" align="center" >
+						<input type="address" class="form-control form_subclass" id="address1" aria-describedby="address" placeholder="Street Address">
+						<input type="address" class="form-control form_subclass" id="address2" aria-describedby="address" placeholder="Suite/Apt">
+						<input type="address" class="form-control form_subclass" id="address3" aria-describedby="address" placeholder="City">
+						<input type="address" class="form-control form_subclass" id="address4" aria-describedby="address" placeholder="State">
+						<input type="address" class="form-control form_subclass" id="address5" aria-describedby="address" placeholder="ZipCode">
+					  
+					  <button type="submit" class="btn btn-primary form_class">Continue For Delivery</button>
+					  </div>
+				</form>
+			<p>
+			</p>
+			<div>
+			<button  id ="button2" type="submit" class="element" onclick = "hideDelivery('locationForm')">Carry Out</button>
+			 <form  name = "form_location" id ="locationForm" class ="form_class" onsubmit="return carryOut(this);" style="display:none;">
+				  <div class="form-group" align="center" >
+					<input type="address" class="form-control form_subclass" id="address6" aria-describedby="address" placeholder="City">
+					<input type="address" class="form-control form_subclass" id="address7" aria-describedby="address" placeholder="State">
+					<input type="address" class="form-control form_subclass" id="address8" aria-describedby="address" placeholder="ZipCode">
+				  </div>
+				  <button type="submit" class="btn btn-primary form_class">Search Locations</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

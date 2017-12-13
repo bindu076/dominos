@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dominos.css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="dominoscontroller.js"></script>
+	<title>Dominos Menu</title>
+</head>
+<body class = "main">
+	<div class="container">
+	
+		<div class="panel panel-default">
+		<h4> Select the size of pizza you want:</h4>
+			<input name="size" type="checkbox">small
+			<input name="size" type="checkbox">medium
+			<input name="size" type="checkbox">large
+		</div>
+		
+		<div class="panel panel-default">
+		<h4> Select the crust of pizza you want:</h4>
+			<input name="size" type="checkbox">thin
+			<input name="size" type="checkbox">thick
+			<input name="size" type="checkbox">flatbread
+		</div>
+		<div class="panel panel-default">
+		<h4>select the pizza toppings you want:</h4>
+			<input name="toppings" type="checkbox">pepperoni
+			<input name="toppings" type="checkbox">bacon
+			<input name="toppings" type="checkbox">sausage
+			<input name="toppings" type="checkbox">chicken
+			<input name="toppings" type="checkbox">mushrooms
+			<input name="toppings" type="checkbox">pinapple
+			<input name="toppings" type="checkbox">black olives
+		</div>
+		<div class="panel panel-default">
+		<h4> Select the cheese on your pizza</h4>
+			<input name="size" type="checkbox">mozzarella
+			<input name="size" type="checkbox">cheddar
+			<input name="size" type="checkbox">colby
+		</div>
+		<div>
+			<input type="button" value="submit order" onclick="dosubmit()">
+			<input type="button" value="clear entries" onclick="doclear()">
+		</div>
+	</div>
